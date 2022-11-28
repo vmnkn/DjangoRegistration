@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h2>Authorized user: {{ request.user.username }}</h2>
+<div>User info: {{ request.user.email }}</div>
+
+<button><a href="sign/login/">Exit</a> </button>
+{% endblock content %}
